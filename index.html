@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .course-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Education Academy</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-200">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-200">About Us</a></li>
+                <li><a href="#faculty" class="hover:text-blue-200">Our Faculty</a></li>
+                <li><a href="#courses" class="hover:text-blue-200">Courses</a></li>
+                <li><a href="#why-choose" class="hover:text-blue-200">Why Choose Us</a></li>
+                <li><a href="terms.html" class="hover:text-blue-200">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 text-white flex items-center">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-4">Welcome to Education Academy</h2>
+            <p class="text-xl mb-6">Empowering minds through quality education and innovative learning.</p>
+            <a href="#courses" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                Education Academy is dedicated to providing top-tier education to students worldwide. 
+                Our mission is to foster a love for learning through innovative teaching methods and a supportive environment.
+                With a team of experienced educators, we aim to empower students to achieve their full potential.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Faculty Section -->
+    <section id="faculty" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Faculty</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://via.placeholder.com/150" alt="Faculty 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Muhammad Assadullah</h3>
+                    <p class="text-gray-600">Course Instructor for WebVerse, Prom</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://via.placeholder.com/150" alt="Faculty 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Prof. Jane Doe</h3>
+                    <p class="text-gray-600">Mathematics Instructor</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://via.placeholder.com/150" alt="Faculty 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Dr. Emily Brown</h3>
+                    <p class="text-gray-600">Physics Lecturer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='codecrack.html'">
+                    <h3 class="text-xl font-semibold mb-2">CodeCrack: Python Essentials</h3>
+                    <p class="text-gray-600">Crack the logic, build real-world solutions.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='appverge.html'">
+                    <h3 class="text-xl font-semibold mb-2">AppVerge: Flutter Bootcamp</h3>
+                    <p class="text-gray-600">Build real cross-platform apps from scratch.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='webverse.html'">
+                    <h3 class="text-xl font-semibold mb-2">WebVerse: Frontend Mastery</h3>
+                    <p class="text-gray-600">Dive into the universe of beautiful websites.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='designit.html'">
+                    <h3 class="text-xl font-semibold mb-2">DesignIt: Canva for Creators</h3>
+                    <p class="text-gray-600">From basic to branded — master visual content.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='officepro.html'">
+                    <h3 class="text-xl font-semibold mb-2">OfficePro: MS Office Mastery</h3>
+                    <p class="text-gray-600">Word. Excel. PowerPoint. Master the essentials.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='olevels.html'">
+                    <h3 class="text-xl font-semibold mb-2"> O/IGCSE Computer Science</h3>
+                    <p class="text-gray-600">Exam-focused. Concept-based. Grade-boosted.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='alevels.html'">
+                    <h3 class="text-xl font-semibold mb-2">CSLogic: A-Level Crash Course</h3>
+                    <p class="text-gray-600">Master data structures, logic, and theory.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='officepro.html'">
+                    <h3 class="text-xl font-semibold mb-2">FSC/ICS</h3>
+                    <p class="text-gray-600">Learn exactly what the board wants — and more.</p>
+                </div>
+                <div class="course-card bg-gray-50 p-6 rounded-lg shadow-md cursor-pointer" onclick="window.location.href='prompteng.html'">
+                    <h3 class="text-xl font-semibold mb-2">Promptify</h3>
+                    <p class="text-gray-600">Simplifies and elevates prompt writing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Why Choose Us</h2>
+            <ul class="list-disc text-lg text-gray-700 max-w-3xl mx-auto space-y-4">
+                <li>Expert faculty with years of teaching experience.</li>
+                <li>Comprehensive and up-to-date course materials.</li>
+                <li>Flexible learning options for all schedules.</li>
+                <li>Supportive community and personalized guidance.</li>
+                <li>Hands-on projects to enhance practical skills.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Education Academy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
